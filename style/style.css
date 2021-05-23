@@ -1,0 +1,93 @@
+.my-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.overlay-container {
+    position: relative;
+    width: 70%;
+    height: min-content;
+}
+
+.overlay-container:hover .my-overlay {
+    opacity: 0.8;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.animated-button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: max-content;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.animated-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.animated-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.animated-button:hover span {
+    padding-right: 25px;
+}
+
+.animated-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.survey-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 95%;
+}
+
+.survey-section {
+    width: 100%;
+    border: 1px solid black;
+    margin: 0.3em;
+    padding: 1em;
+}
+
+.custom-footer {
+    margin-top: 2em;
+    padding: 2em;
+    background-color: #eee;
+}

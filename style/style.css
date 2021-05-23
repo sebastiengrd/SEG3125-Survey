@@ -9,6 +9,7 @@
     opacity: 0;
     transition: .5s ease;
     background-color: rgb(0, 168, 146);
+    text-shadow: 0px 0px 2px black;
 }
 
 .overlay-container {
@@ -18,12 +19,11 @@
 }
 
 .overlay-container:hover .my-overlay {
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .text {
     color: white;
-    font-size: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -31,6 +31,10 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.text p {
+    font-size: 35px;
 }
 
 .animated-button {
